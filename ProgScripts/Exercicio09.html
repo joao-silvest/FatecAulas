@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 09</title>
+</head>
+<body>
+    <h1>Exercicio09</h1>
+    <table border="1">
+        <tr>
+            <td>Opinião (OP)</td>
+            <td>Significado</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ótimo</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bom</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Regular</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ruim</td>
+        </tr>
+    </table>
+    <h3>Digite sua idade e seu voto: </h3>
+    <input type="text" id="id" placeholder="Digite sua idade">
+    <input type="number" name="" id="OP" placeholder="Selecione sua Opinião">
+    <input type="submit" value="Confirmar">
+    
+    <script>
+        var id = parseFloat(document.getElementById('id').value);
+        var OP = parseInt(document.getElementById('OP').value);
+        var qtd = 0;
+        var porcentagem = [];
+        var porcentagemOP = [];
+        var media = 0;
+        while(id > 0){
+            
+            switch (OP) {
+                case 1:
+                    porcentagem.push(id);
+                    porcentagemOP.push(OP);
+                    qtd++;
+                    break;
+                case 2:
+                    porcentagem.push(id);
+                    porcentagemOP.push(OP);
+                    qtd++;
+                    break;
+                case 3:
+                    porcentagem.push(id);
+                    porcentagemOP.push(OP);
+                    qtd++;
+                    break;
+                case 4:
+                    porcentagem.push(id);
+                    porcentagemOP.push(OP);
+                    qtd++;
+                    break;
+                default:
+                    document.write("Opção inválida");
+                }   
+
+        }
+        document.write("Quantidade de pessoas que responderam a pergunta: " + qtd + "<br>");
+        document.write("Média de idade: " + media);
+    </script>
+    
+</body>
+</html>

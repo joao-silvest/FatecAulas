@@ -7,7 +7,7 @@ function verificar(){
     var branco = 0;
     var qtd = 0;
 
-    while(voto){
+    
 
         switch (voto) {
             case 1:
@@ -27,7 +27,7 @@ function verificar(){
                 qtd++;
             default:
                 break;
-        }
+       
 
         /*if(voto == 1){
             pre1++;
@@ -46,10 +46,10 @@ function verificar(){
         }*/
     }
 
-    document.write("Candidato 1: " + (qtd/pre1) + "%");
-    document.write("Candidato 2: " + (qtd/pre2) + "%");
-    document.write("Votos nulos: " + (qtd/nulo) + "%");
-    document.write("Votos em branco: " + (qtd/branco) + "%");
+    document.write("Candidato 1: " + (qtd/pre1) + "%<br>");
+    document.write("Candidato 2: " + (qtd/pre2) + "%<br>");
+    document.write("Votos nulos: " + (qtd/nulo) + "%<br>");
+    document.write("Votos em branco: " + (qtd/branco) + "%<br>");
 
 
 }
